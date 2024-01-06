@@ -1,5 +1,5 @@
 
-# Titre du Projet
+# MyDigitalSchool - Évaluation 1/1 - Design Patterns
 
 ## Table des Matières
 - [Réponses aux Questions](#réponses-aux-questions)
@@ -12,10 +12,10 @@
     - [Avantages/Inconvénients](#3-avantagesinconvénients)
     - [Diagramme de Classes UML](#4-diagramme-de-classes-uml-du-pattern)
     - [Variation Optionnelle](#5-variation-optionnelle--utilisation-dun-conteneur-dinjection-de-dépendances)
-        - [Description de la Variation](#1-description-de-la-variation)
-        - [Mise en œuvre de la Variation](#2-mise-en-œuvre-de-la-variation)
-        - [Code Exemplaire](#3-code-exemplaire)
-        - [Justification de la Variation](#4-justification-de-la-variation)
+        - [Description de la Variation](#description-de-la-variation)
+        - [Mise en œuvre de la Variation](#mise-en-œuvre-de-la-variation)
+        - [Code Exemplaire](#code-exemplaire)
+        - [Justification de la Variation](#justification-de-la-variation)
     - [Lancer le Projet](#6-lancer-le-projet)
 - [Code Source de la Démo](#code-source-de-la-démo)
 
@@ -161,14 +161,14 @@ Une interface en programmation orientée objet est un contrat qui définit un en
 
 ### 5. Variation Optionnelle : Utilisation d'un Conteneur d'Injection de Dépendances
 
-#### 1. Description de la Variation :
+####  Description de la Variation :
 Un conteneur d'injection de dépendances est un objet centralisé qui connaît les différents services et leurs dépendances. Il est responsable de la création et de la fourniture des instances de service en résolvant leurs dépendances. Cela simplifie la gestion des dépendances, surtout dans les grandes applications.
 
-#### 2.  Mise en œuvre de la Variation :
+####  Mise en œuvre de la Variation :
 - **Création d'un conteneur :** Implémenter un conteneur simple qui stocke des fonctions anonymes ou des classes responsables de la création de services spécifiques.
 - **Résolution des dépendances :** Le conteneur doit être capable de résoudre automatiquement les dépendances des services lors de leur création.
 
-#### 3. Code Exemplaire :
+####  Code Exemplaire :
 
 ```php
 <?php
@@ -202,7 +202,7 @@ $app->showWeather("Paris");
 ?>
 ```
 
-#### 4. Justification de la Variation :
+####  Justification de la Variation :
 - **Gestion Centralisée :** Un conteneur centralise la gestion des dépendances, rendant le code plus propre et plus facile à maintenir.
 - **Flexibilité Améliorée :** Il devient plus facile de changer les implémentations des services sans modifier le code consommateur.
 - **Meilleure Scalabilité :**  Au fur et à mesure que le projet grandit, ajouter de nouvelles dépendances et services devient plus gérable.
