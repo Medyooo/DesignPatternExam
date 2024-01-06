@@ -18,6 +18,9 @@
         - [Justification de la Variation](#justification-de-la-variation)
     - [Lancer le Projet](#6-lancer-le-projet)
 - [Code Source de la Démo](#code-source-de-la-démo)
+- [Remerciements](#remerciements)
+- [Conclusion](#conclusion)
+
 
 ## Réponses aux Questions
 
@@ -268,5 +271,16 @@ $app->showWeather("Paris");  // Sortie : Temps ensoleillé à Paris
 
 ```
 
+## Remerciements
+
+Je tiens à exprimer ma profonde gratitude à mon formateur, M. Paul Schuhmacher, pour son guidage expert à travers le module Design Patterns. Votre passion pour la matière et votre approche pédagogique ont grandement enrichi mon expérience d'apprentissage. Vos conseils et votre soutien ont été inestimables et ont inspiré en moi une appréciation profonde pour l'art et la science de la programmation. Merci d'avoir allumé cette étincelle de curiosité et d'innovation dans mon parcours de développement.
+
 ## Conclusion
-Ce README fournit une vue d'ensemble de l'implémentation du design pattern d'Injection de Dépendances en PHP. Il inclut le contexte de son utilisation, les avantages et les inconvénients, une implémentation en PHP, ainsi que les instructions pour exécuter une démo simple. Pour toute question ou clarification, n'hésitez pas à consulter la documentation PHP ou à contacter le créateur de ce dépôt.
+
+Au terme de cette évaluation du module Design Patterns, nous avons traversé un périple instructif à travers les principes fondamentaux et les applications pratiques des modèles de conception en programmation orientée objet. En examinant en profondeur des patterns tels que l'injection de dépendances et en les appliquant à des scénarios concrets, nous avons non seulement enrichi notre compréhension théorique, mais aussi acquis des compétences pratiques précieuses.
+
+En concluant cette évaluation, il est clair que la maîtrise des design patterns est cruciale pour tout développeur cherchant à créer des logiciels de haute qualité. Les compétences acquises ici sont inestimables et continueront d'orienter nos approches de résolution de problèmes et de conception de systèmes dans notre parcours de développement logiciel.
+
+
+
+
