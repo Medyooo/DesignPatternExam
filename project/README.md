@@ -3,16 +3,20 @@
 
 ## Table des Matières
 - [Réponses aux Questions](#réponses-aux-questions)
+    - [Question 1 : Programmer vers une interface plutôt qu'une implémentation](#1-programmer-vers-une-interface-plutôt-quune-implémentation)
+     - [Question 2 : Préférer la composition à l'héritage](#2-préférer-la-composition-à-lhéritage)
+     - [Question 3 :Définition d'une interface en programmation orientée objet](#3-définition-dune-interface-en-programmation-orientée-objet)
 - [Design Pattern: Dependency Injection](#design-pattern-dependency-injection)
-- [Contexte](#contexte)
-- [Avantages/Inconvénients](#avantagesinconvénients)
-- [Variation Optionnelle](#variation-optionnelle)
-- [Diagramme de Classes UML](#diagramme-de-classes-uml)
-- [Lancer le Projet](#lancer-le-projet)
+    - [Contexte](#contexte)
+    - [Avantages/Inconvénients](#avantagesinconvénients)
+    - [Variation Optionnelle](#variation-optionnelle)
+    - [Diagramme de Classes UML](#diagramme-de-classes-uml)
+    - [Lancer le Projet](#lancer-le-projet)
 - [Code Source de la Démo](#code-source-de-la-démo)
 
 ## Réponses aux Questions
-### Programmer vers une interface plutôt qu'une implémentation
+
+### 1. Programmer vers une interface plutôt qu'une implémentation
 
 **Avantages :**
 - **Découplage :** Les composants du programme interagissent avec des interfaces, pas des implémentations directes, ce qui réduit les dépendances entre les composants.
@@ -56,7 +60,7 @@ $paymentService->makePayment(50);  // Sortie: Paiement de 50 traité via Stripe.
 **Diagramme :**
 ![Diagramme Exemple](/project/images/ex1exemple2.png "Diagramme Exemple")
 
-### Préférer la composition à l'héritage
+### 2. Préférer la composition à l'héritage
 
 **Justifications :**
 - **Souplesse :** Avec la composition, il est possible de modifier le comportement d'un objet à l'exécution en changeant ses composants, ce qui n'est pas possible avec l'héritage fixe.
@@ -118,7 +122,7 @@ $walkingRobot->move();  // Sortie: Se déplace en volant.
 ![Diagramme Exemple](/project/images/ex2exemple2.png "Diagramme Exemple")
 
 
-### Définition d'une interface en programmation orientée objet
+### 3. Définition d'une interface en programmation orientée objet
 
 Une interface en programmation orientée objet est un contrat qui définit un ensemble de méthodes abstraites sans implémentations spécifiques. Les classes qui implémentent cette interface s'engagent à fournir des implémentations concrètes pour toutes les méthodes définies. Elle sert à définir une forme standard que doivent prendre les objets pour pouvoir interagir entre eux, permettant ainsi une plus grande modularité et flexibilité dans la conception et l'implémentation des systèmes logiciels.
 
@@ -143,16 +147,23 @@ Une interface en programmation orientée objet est un contrat qui définit un en
 - **Complexité :**  Peut introduire une complexité supplémentaire avec la gestion d'un conteneur d'injection de dépendances.
 - **Sur-ingénierie :** Peut être considéré comme excessif pour les petits projets.
 
-### Variation Optionnelle : Utilisation d'un Conteneur d'Injection de Dépendances
+### 4. Diagramme de classes UML du pattern
 
-#### Description de la Variation :
+![Diagramme Exemple](/project/images/dependency_injection_demo_diagram.png "Diagramme Exemple")
+
+
+
+
+### 5. Variation Optionnelle : Utilisation d'un Conteneur d'Injection de Dépendances
+
+#### 1. Description de la Variation :
 Un conteneur d'injection de dépendances est un objet centralisé qui connaît les différents services et leurs dépendances. Il est responsable de la création et de la fourniture des instances de service en résolvant leurs dépendances. Cela simplifie la gestion des dépendances, surtout dans les grandes applications.
 
-#### Mise en œuvre de la Variation :
+#### 2.  Mise en œuvre de la Variation :
 - **Création d'un conteneur :** Implémenter un conteneur simple qui stocke des fonctions anonymes ou des classes responsables de la création de services spécifiques.
 - **Résolution des dépendances :** Le conteneur doit être capable de résoudre automatiquement les dépendances des services lors de leur création.
 
-#### Code Exemplaire :
+#### 3. Code Exemplaire :
 
 ```php
 <?php
@@ -186,21 +197,21 @@ $app->showWeather("Paris");
 ?>
 ```
 
-#### Justification de la Variation :
+#### 4. Justification de la Variation :
 - **Gestion Centralisée :** Un conteneur centralise la gestion des dépendances, rendant le code plus propre et plus facile à maintenir.
 - **Flexibilité Améliorée :** Il devient plus facile de changer les implémentations des services sans modifier le code consommateur.
 - **Meilleure Scalabilité :**  Au fur et à mesure que le projet grandit, ajouter de nouvelles dépendances et services devient plus gérable.
 
-## Lancer le Projet
+### 6. Lancer le Projet
 Pour exécuter cette démo du design pattern d'Injection de Dépendances en PHP, suivez ces étapes :
 
-1. **Clonez le dépôt :** Commencez par cloner le dépôt GitHub où se trouve le projet. Utilisez la commande `git clone [URL_du_dépôt]` dans votre terminal pour télécharger le projet sur votre machine locale.
+1. **Clonez le dépôt :** Commencez par cloner le dépôt GitHub où se trouve le projet. Utilisez la commande `git clone https://github.com/Medyooo/DesignPatternExam` dans votre terminal pour télécharger le projet sur votre machine locale.
 
 2. **Assurez-vous d'avoir PHP installé :** Votre ordinateur doit avoir PHP installé pour exécuter des scripts PHP. Vous pouvez vérifier cela en exécutant `php -v` dans votre terminal.
 
 3. **Ouvrez un terminal :** Ouvrez un terminal ou une invite de commande.
 
-4. **Naviguez jusqu'au script :** Utilisez la commande `cd [nom_du_dossier_cloné]` pour naviguer jusqu'au répertoire où vous avez cloné le dépôt.
+4. **Naviguez jusqu'au script :** Utilisez la commande `cd project` pour naviguer jusqu'au répertoire où vous avez cloné le dépôt.
 
 5. **Exécutez le script :** Tapez `php dependency_injection_demo.php` dans votre terminal et appuyez sur Entrée. Si tout est correctement configuré, vous devriez voir le résultat de l'exécution du script.
 
