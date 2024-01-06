@@ -7,11 +7,16 @@
      - [Question 2 : Préférer la composition à l'héritage](#2-préférer-la-composition-à-lhéritage)
      - [Question 3 :Définition d'une interface en programmation orientée objet](#3-définition-dune-interface-en-programmation-orientée-objet)
 - [Design Pattern: Dependency Injection](#design-pattern-dependency-injection)
-    - [Contexte](#contexte)
-    - [Avantages/Inconvénients](#avantagesinconvénients)
-    - [Variation Optionnelle](#variation-optionnelle)
-    - [Diagramme de Classes UML](#diagramme-de-classes-uml)
-    - [Lancer le Projet](#lancer-le-projet)
+    - [Choix du Design Pattern](#1-choix-du-design-pattern)
+    - [Contexte d'Utilisation](#2-contexte-dutilisation)
+    - [Avantages/Inconvénients](#3-avantagesinconvénients)
+    - [Diagramme de Classes UML](#4-diagramme-de-classes-uml-du-pattern)
+    - [Variation Optionnelle](#5-variation-optionnelle--utilisation-dun-conteneur-dinjection-de-dépendances)
+        - [Description de la Variation](#1-description-de-la-variation)
+        - [Mise en œuvre de la Variation](#2-mise-en-œuvre-de-la-variation)
+        - [Code Exemplaire](#3-code-exemplaire)
+        - [Justification de la Variation](#4-justification-de-la-variation)
+    - [Lancer le Projet](#6-lancer-le-projet)
 - [Code Source de la Démo](#code-source-de-la-démo)
 
 ## Réponses aux Questions
@@ -149,7 +154,7 @@ Une interface en programmation orientée objet est un contrat qui définit un en
 
 ### 4. Diagramme de classes UML du pattern
 
-![Diagramme Exemple](/project/images/dependency_injection_demo_diagram.png "Diagramme Exemple")
+![Diagramme](/project/images/dependency_injection_demo_diagram.png "Diagramme ")
 
 
 
